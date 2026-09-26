@@ -5,10 +5,14 @@
     <meta charset="utf-8" />
     <title>The Powerpuff Girls in Mojo for Mayor</title>
     <style>
+        body {
+            background-color: black;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+        }
+
         .monogame {
-            padding-right: 0;
-            margin-left: auto;
-            margin-right: auto;
             display: block;
         }
 
@@ -17,12 +21,25 @@
         }
 
         div.monogame_border {
-            border: 1px solid black;
+            border: 0px none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         canvas.monogame {
             border: 0px none;
             background-color: black;
+            object-fit: contain;
+            max-height: 100%;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
         }
     </style>
 
